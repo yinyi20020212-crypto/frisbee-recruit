@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>飞盘社招新 | 一起起飞</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="飞盘社首页">
+      <span class="brand-mark"></span>
+      <span>飞盘社</span>
+    </a>
+    <nav class="nav" aria-label="主要导航">
+      <a href="#events">活动</a>
+      <a href="#why">亮点</a>
+      <a href="#join">报名</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="sun"></div>
+        <div class="field-line field-line-one"></div>
+        <div class="field-line field-line-two"></div>
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">2026 春季招新开放中</p>
+        <h1>把晚风、草地和一次漂亮接盘，都装进你的大学生活。</h1>
+        <p class="hero-text">
+          不需要基础，不限专业。我们每周训练、周末友谊赛，还有新手友好的教学局。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#join">立即报名</a>
+          <a class="button secondary" href="#events">查看训练安排</a>
+        </div>
+      </div>
+      <div class="disc-stage" aria-label="飞盘运动插画">
+        <div class="disc-shadow"></div>
+        <div class="disc">
+          <span></span>
+        </div>
+        <div class="player player-left">
+          <div class="head"></div>
+          <div class="body"></div>
+          <div class="arm arm-back"></div>
+          <div class="arm arm-front"></div>
+          <div class="leg leg-back"></div>
+          <div class="leg leg-front"></div>
+        </div>
+        <div class="player player-right">
+          <div class="head"></div>
+          <div class="body"></div>
+          <div class="arm arm-back"></div>
+          <div class="arm arm-front"></div>
+          <div class="leg leg-back"></div>
+          <div class="leg leg-front"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section band" id="events">
+      <div class="section-heading">
+        <p class="eyebrow">本周就能加入</p>
+        <h2>新手也能跟上的活动节奏</h2>
+      </div>
+      <div class="schedule">
+        <article class="event-card">
+          <time>周三 19:30</time>
+          <h3>基础教学</h3>
+          <p>握盘、传盘、接盘、跑位，从零开始把动作练顺。</p>
+        </article>
+        <article class="event-card">
+          <time>周五 20:00</time>
+          <h3>分组训练</h3>
+          <p>小队配合、短传推进、区域防守，适合有一点基础的同学。</p>
+        </article>
+        <article class="event-card">
+          <time>周日 16:30</time>
+          <h3>草地友谊赛</h3>
+          <p>轻松开局，认真奔跑。打完一起复盘，也一起吃饭。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split" id="why">
+      <div>
+        <p class="eyebrow">为什么选飞盘</p>
+        <h2>运动量刚好，社交感很强，胜负之外还有默契。</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <strong>零门槛</strong>
+          <span>第一次来也会有人带练。</span>
+        </div>
+        <div class="feature">
+          <strong>混合组队</strong>
+          <span>男女同场，配合比单打更重要。</span>
+        </div>
+        <div class="feature">
+          <strong>精神友好</strong>
+          <span>尊重、沟通、自我裁判。</span>
+        </div>
+        <div class="feature">
+          <strong>持续成长</strong>
+          <span>校内赛、城市赛、社团联动都能参与。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section join" id="join">
+      <div class="join-panel">
+        <div>
+          <p class="eyebrow">现在报名</p>
+          <h2>带上运动鞋，下一次训练场见。</h2>
+          <p>填写信息后，我们会把训练地点、装备建议和新手群二维码发给你。</p>
+        </div>
+        <form class="signup-form">
+          <label>
+            姓名
+            <input type="text" name="name" placeholder="你的名字" required>
+          </label>
+          <label>
+            联系方式
+            <input type="tel" name="phone" placeholder="手机号 / 微信号" required>
+          </label>
+          <label>
+            飞盘经验
+            <select name="level">
+              <option>完全新手</option>
+              <option>玩过几次</option>
+              <option>有比赛经验</option>
+            </select>
+          </label>
+          <button class="button primary" type="submit">提交报名</button>
+          <p class="form-note" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
