@@ -117,25 +117,32 @@
           <h2>带上运动鞋，下一次训练场见。</h2>
           <p>填写信息后，我们会把训练地点、装备建议和新手群二维码发给你。</p>
         </div>
-        <form class="signup-form">
+        <form class="signup-form" action="https://formsubmit.co/yinyi20020212@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="新的飞盘社报名信息">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://yinyi20020212-crypto.github.io/frisbee-recruit/thanks.html">
           <label>
             姓名
-            <input type="text" name="name" placeholder="你的名字" required>
+            <input type="text" name="姓名" placeholder="你的名字" required>
           </label>
           <label>
             联系方式
-            <input type="tel" name="phone" placeholder="手机号 / 微信号" required>
+            <input type="text" name="联系方式" placeholder="手机号 / 微信号" required>
           </label>
           <label>
             飞盘经验
-            <select name="level">
+            <select name="飞盘经验">
               <option>完全新手</option>
               <option>玩过几次</option>
               <option>有比赛经验</option>
             </select>
           </label>
+          <label>
+            备注
+            <textarea name="备注" placeholder="想参加哪次训练，或有什么想提前了解的？"></textarea>
+          </label>
           <button class="button primary" type="submit">提交报名</button>
-          <p class="form-note" role="status"></p>
+          <p class="form-note" role="status">提交后报名信息会发送到招新负责人的邮箱。</p>
         </form>
       </div>
     </section>

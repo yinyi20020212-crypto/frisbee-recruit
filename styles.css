@@ -195,6 +195,12 @@ h3 {
   transform: translateY(-2px);
 }
 
+.button:disabled {
+  cursor: wait;
+  opacity: 0.72;
+  transform: none;
+}
+
 .primary {
   color: #fff;
   background: var(--coral);
@@ -436,9 +442,9 @@ label {
 }
 
 input,
-select {
+select,
+textarea {
   width: 100%;
-  height: 48px;
   padding: 0 14px;
   border: 1px solid rgba(255, 255, 255, 0.32);
   border-radius: var(--radius);
@@ -448,7 +454,19 @@ select {
   outline: none;
 }
 
-input::placeholder {
+input,
+select {
+  height: 48px;
+}
+
+textarea {
+  min-height: 92px;
+  padding-top: 12px;
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
   color: rgba(255, 255, 255, 0.72);
 }
 
@@ -460,6 +478,46 @@ select option {
   min-height: 24px;
   margin: 0;
   font-weight: 700;
+}
+
+.thanks-page {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(185, 232, 255, 0.92), rgba(233, 247, 238, 0.96)),
+    var(--paper);
+}
+
+.thanks {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 20px;
+}
+
+.thanks-panel {
+  width: min(680px, 100%);
+  padding: clamp(28px, 6vw, 56px);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0 28px 70px rgba(27, 89, 58, 0.16);
+}
+
+.thanks-panel .brand-mark {
+  display: inline-block;
+  margin-bottom: 28px;
+  border-color: var(--grass-dark);
+}
+
+.thanks-panel h1 {
+  margin-bottom: 16px;
+  font-size: clamp(36px, 6vw, 64px);
+}
+
+.thanks-panel p:not(.eyebrow) {
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.8;
 }
 
 @keyframes floatDisc {
